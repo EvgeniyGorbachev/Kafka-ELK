@@ -83,6 +83,11 @@ The logstash configuration is stored in `logstash/config/logstash.conf`.
 The folder `logstash/config` is mapped onto the container `/etc/logstash/conf.d` so you
 can create more than one file in that folder if you'd like to. However, you must be aware that config files will be read from the directory in alphabetical order.
 
+System can collects data automatically from such resources:
+
+1. Amazon S3, configuration is stored in `logstash/config/s3-logstash.conf`, need to add credentials (every 1 minutes, default) [s3 logstash plugin](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-s3.html).
+2. Amazon RDS, configuration is stored in `logstash/config/rds-logstash.conf`, need to add credentials and JDBC driver (every 5 minutes, default) [jdbc logstash plugin](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-jdbc.html).
+
 ## Specify the amount of memory used by Logstash. ##
 
 The Logstash container use the *LS_HEAP_SIZE* environment variable to determine how much memory should be associated to the JVM heap memory (defaults to 500m).
