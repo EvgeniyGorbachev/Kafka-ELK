@@ -205,3 +205,7 @@ This will store elasticsearch data inside `/path/to/storage`.
 
 1. First method use [PHP Kafka client](https://github.com/arnaud-lb/php-rdkafka), examples in files - `examples/kafkaConsumer.php` and `examples/kafkaProducer.php`. Available on [localhost:19092](http://localhost:19092/) after launch Docker.
 2. Second method use [Kafka REST Proxy](https://github.com/confluentinc/kafka-rest). Available on [localhost:18082](http://localhost:18082/) after launch Docker.
+
+# Analysis of log
+
+For analysis of logs use Kibana which is available by link - [localhost:5601](http://localhost:5601/).

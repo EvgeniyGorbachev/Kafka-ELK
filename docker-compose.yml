@@ -79,8 +79,12 @@ services:
       - "5000:5000"
     networks:
       - elk
+      - zk
+      - default
     depends_on:
       - elasticsearch
+    links:
+      - kafka
 
   kibana:
     build: kibana/
