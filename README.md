@@ -1,4 +1,4 @@
-# SingleLog - Kafka/ELK logging system
+# Kafka + ELK logging system
 
 Run Elasticseach, Logstash, Kibana, Kafka, stack with Docker and Docker-compose.
 
